@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+/* Encabezado */
+header {
+    background-color:#333333;
+    padding: 20px;
+}
+
+.foto {
+    display: flex; /* Cambiamos a flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color:#fff;
+      
+    
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+.sobre-mi, .habilidades, .educacion, .contacto {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 60px; /* Bordes redondeados */
+    background-color: #bff7fd; /* Color de fondo verde */
+
+
+}
+
+.sobre-mi p {
+    margin-bottom: 10px;
+}
+
+.habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.habilidades h2 {
+    text-align: center;
+}
+
+.habilidades ul {
+    
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades li {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff; /* Color de fondo verde */
+
+}
+
+.educacion h3 {
+    margin-bottom: 10px;
+    
+    
+}
+
+.educacion ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+}
+
+.educacion li {
+    margin-bottom: 5px;
+}
+
+.contacto form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.contacto label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.contacto textarea {
+    height: 100px;
+}
+
+.contacto button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto centrada */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen exterior */
+    cursor: pointer; /* Cursor de apuntar */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .foto, .info {
+        display: block;
+        text-align: center;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    .sobre-mi, .habilidades, .educacion, .contacto {
+        width: 100%;
+    }
+}
+
+.boton-linkedin {
+    background-color: #0077B5; /* Color de fondo de LinkedIn */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto centrada */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen exterior */
+    cursor: pointer; /* Cursor de apuntar */
+    border-radius: 4px; /* Bordes redondeados */
+}
